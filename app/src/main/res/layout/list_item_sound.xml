@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+<!--    声明数据对象，使用数据绑定 ViewModel，这样就可以用@符号将数据填入布局中了
+但是此时视图和模型没有真正联系，还需要在SoundHolder中添加绑定方法-->
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.beatbox.SoundViewModel" />
+    </data>
+<!--    将按钮放在FrameLayout中，不论屏幕多大，拉伸的是框架，而不是按钮-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="@{()->viewModel.onButtonClicked()}"
+            android:text="@{viewModel.title}"
+            tools:text="Sound name"/>
+    </FrameLayout>
+
+</layout>
+

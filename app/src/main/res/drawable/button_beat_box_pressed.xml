@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--制造按下按钮时的特效，可以弄得很复杂多变-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <solid android:color="@color/red" />
+
+        </shape>
+    </item>
+<!--    在按钮周围显示红圈-->
+    <item>
+        <shape android:shape="oval">
+            <stroke
+                android:width="4dp"
+                android:color="@color/dark_red" />
+        </shape>
+    </item>
+</layer-list>

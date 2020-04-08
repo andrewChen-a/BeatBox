@@ -1,0 +1,19 @@
+<resources>
+<!--    设置主题-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/dark_red</item>
+        <item name="colorAccent">@color/gray</item>
+<!--        一直进入Theme.AppCompat，找到后得到这个属性，就是android界面的背景颜色-->
+        <item name="android:windowBackground">@color/soothing_blue</item>
+        <item name="buttonStyle">@style/BeatBoxButton</item>
+    </style>
+
+<!--    给按钮添加新样式-->
+    <style name="BeatBoxButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_beat_box</item>
+    </style>
+</resources>

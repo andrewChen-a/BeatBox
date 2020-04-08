@@ -1,0 +1,7 @@
+
+<
+java:S1170"!Make this final field static too.(š×³—ÿÿÿÿÿ
+V	java:S125#"<This block of commented-out lines of code should be removed.(°º¬½ûÿÿÿÿ
+B
+java:S1068"'Remove this unused "TAG" private field.(š×³—ÿÿÿÿÿ
+h	java:S116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š×³—ÿÿÿÿÿ
